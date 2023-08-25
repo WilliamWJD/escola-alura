@@ -14,7 +14,6 @@ public class AlunosInMemoryRepository implements AlunoRepository {
 	@Override
 	public void matricular(Aluno aluno) {
 		this.matriculados.add(aluno);
-
 	}
 
 	@Override

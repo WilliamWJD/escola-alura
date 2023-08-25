@@ -12,6 +12,8 @@ public class Aluno {
 	private Email email;
 
 	private List<Telefone> telefones = new ArrayList<>();
+	
+	private String senha;
 
 	public Aluno(Cpf cpf, String nome, Email email) {
 		this.cpf = cpf;
@@ -49,6 +51,18 @@ public class Aluno {
 
 	public List<Telefone> getTelefones() {
 		return telefones;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public void setTelefones(List<Telefone> telefones) {
+		this.telefones = telefones;
 	}
 
 	@Override

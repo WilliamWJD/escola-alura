@@ -9,6 +9,7 @@ public class Cpf {
 		if(Objects.isNull(numero) || !numero.matches("^([0-9]){3}\\.([0-9]){3}\\.([0-9]){3}-([0-9]){2}$")) {
 			throw new IllegalArgumentException("Cpf inválido !");
 		}
+		this.numero = numero;
 	}
 
 	public String getNumero() {
